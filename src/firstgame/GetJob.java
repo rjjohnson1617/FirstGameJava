@@ -17,6 +17,7 @@ import static firstgame.FirstGame.day;
 import static firstgame.FirstGame.energy;
 import static firstgame.FirstGame.job;
 import static firstgame.FirstGame.jobEnergy;
+import static firstgame.FirstGame.jobMoney;
 
 public class GetJob {
     
@@ -66,6 +67,7 @@ public class GetJob {
                                     + "\nCongrats! You were hired!");
                             job = "Janitor";
                             jobEnergy = 10;
+                            jobMoney = 10;
                             GameWithJob gjob = new GameWithJob();
                             gjob.GameWithJob();
                             break;
@@ -81,6 +83,7 @@ public class GetJob {
                     System.out.println("\nCongrats! You were hired!");
                     job = "Janitor";
                     jobEnergy = 10;
+                    jobMoney = 10;
                     GameWithJob gjob = new GameWithJob();
                     gjob.GameWithJob();
                     break;
@@ -115,6 +118,7 @@ public class GetJob {
                                     + "\nCongrats! You were hired!");
                             job = "Line Cook";
                             jobEnergy = 8;
+                            jobMoney = 10;
                             GameWithJob gjob = new GameWithJob();
                             gjob.GameWithJob();
                             break;
@@ -130,6 +134,7 @@ public class GetJob {
                     System.out.println("\nCongrats! You were hired!");
                     job = "Line Cook";
                     jobEnergy = 8;
+                    jobMoney = 10;
                     GameWithJob gjob = new GameWithJob();
                     gjob.GameWithJob();
                     break;
@@ -164,6 +169,7 @@ public class GetJob {
                                     + "\nCongrats! You were hired!");
                             job = "Bartender";
                             jobEnergy = 10;
+                            jobMoney = 12;
                             GameWithJob gjob = new GameWithJob();
                             gjob.GameWithJob();
                             break;
@@ -179,6 +185,7 @@ public class GetJob {
                     System.out.println("\nCongrats! You were hired!");
                     job = "Bartender";
                     jobEnergy = 10;
+                    jobMoney = 12;
                     GameWithJob gjob = new GameWithJob();
                     gjob.GameWithJob();
                     break;

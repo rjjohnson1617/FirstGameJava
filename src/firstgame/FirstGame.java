@@ -5,6 +5,7 @@
  */
 package firstgame;
 
+import java.text.DecimalFormat;
 import java.util.Scanner;
 /**
  *
@@ -35,8 +36,9 @@ public class FirstGame {
     static int money;
     static int day;
     static int energy = 100;
-    static String job;
+    static String job, major;
     static int jobEnergy;
+    static int jobMoney;
     
     public static void main(String[] args) {
         // TODO code application logic here
@@ -44,6 +46,7 @@ public class FirstGame {
         int choice;
         
         System.out.println("Welcome to the Game of Life!");
+        
         while(true){
             System.out.println("\nWould you like to run the tutorial?\n1. Yes\n2. No");
             choice = scan.nextInt();
@@ -93,7 +96,6 @@ public class FirstGame {
                     if(age > 0 && age < 100)
                         break;
                 } catch (NumberFormatException e){}
-            
                 showError();
                 System.out.println("\nAge must be between 0 and 100.");
                 System.out.println("Please enter your age: ");

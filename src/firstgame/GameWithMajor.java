@@ -5,42 +5,33 @@
  */
 package firstgame;
 
-import static firstgame.FirstGame.major;
 import java.util.Scanner;
-
+import static firstgame.FirstGame.job;
 /**
  *
  * @author rjjohnson
  */
-public class GameWithJob {
+public class GameWithMajor {
     
     Scanner scan = new Scanner(System.in);
     int choice;
     
-    public void GameWithJob(){
+    public void GameWithMajor(){
         while(true){
-            if(major != null){
+            if(job != null){
                 GameWithJobMajor gjm = new GameWithJobMajor();
                 gjm.GameWithJobMajor();
                 break;
             }
             while(true){
-                System.out.println("\nWhat would you like to do?\n1. Work\n2. Enroll"
-                        + " in College\n3. ...");
+                System.out.println("\nWhat would you like to do?\n1. Get A Job"
+                        + "\n2. Go To College\n3. ...");
                 choice = scan.nextInt();
                 if(choice >= 1 && choice <= 3){
                     break;
                 }
                 FirstGame.showError();
-                System.out.println("\nEnter a number ...");
-            }
-            if(choice == 1){
-                Work w = new Work();
-                w.Work();
-            }
-            else if(choice == 2){
-                EnrollCollege ec = new EnrollCollege();
-                ec.EnrollCollege();
+                System.out.println("\nEnter a number 1 through ...");
             }
         }
     }
